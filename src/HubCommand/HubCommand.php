@@ -5,10 +5,9 @@ namespace HubCommand;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat;
 use pocketmine\Player;
 
-class Main extends PluginBase {
+class HubCommand extends PluginBase {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
         $spawnLocation = $this->getServer()->getDefaultLevel()->getSpawnLocation();
@@ -17,12 +16,14 @@ class Main extends PluginBase {
             case "lobby":
                 if ($sender instanceof Player) {
                     $sender->getPlayer()->teleport($spawnLocation);
+                    $sender->sendMessage("§aDu wirst zur Lobby teleportiert...");
                 } else {
                     $sender->sendMessage("Please use this command in-game");
                 }
+                return true;
                 break;
         }
-        return false;
+        return true;
     }
 
 }
