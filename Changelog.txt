@@ -1,1 +1,3 @@
+Changelog HubCommand:
 
+v1#: unnötiges Usage-Output beim Teleport entfernt, TP-Message hinzugefügt, neue Ordnerstruktur, kleine Änderungen
