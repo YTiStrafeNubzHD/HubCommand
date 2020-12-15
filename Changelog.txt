@@ -1,3 +1,4 @@
 Changelog HubCommand:
 
 v1#: unnötiges Usage-Output beim Teleport entfernt, TP-Message hinzugefügt, neue Ordnerstruktur, kleine Änderungen
+v2#: Permission-Error fixed -> Permissions entfernt, da der Command sowieso von jedem benutzt werden soll
