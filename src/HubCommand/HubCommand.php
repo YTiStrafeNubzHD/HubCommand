@@ -17,11 +17,11 @@ class HubCommand extends PluginBase {
                 if ($sender instanceof Player) {
                     $sender->getPlayer()->teleport($spawnLocation);
                     $sender->sendMessage("§aDu wirst zur Lobby teleportiert...");
+                    return true;
                 } else {
                     $sender->sendMessage("Please use this command in-game");
                 }
                 return true;
-                break;
         }
         return true;
     }
