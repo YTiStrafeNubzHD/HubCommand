@@ -1,6 +1,6 @@
 name: HubCommand
 main: HubCommand\HubCommand
-version: 1#
+version: 2#
 api: 3.0.0
 author: IceCruelStuff, iStrafeNubzHDyt
 
